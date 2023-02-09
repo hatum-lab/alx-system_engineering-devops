@@ -1,3 +1,1 @@
-#!/bin/bash
-Where am I?
-
+script that switches the current user to the user betty
