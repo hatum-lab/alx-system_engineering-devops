@@ -1,2 +1,3 @@
 #!/bin/bash
-cut -d: -f1,6 /etc/passwd | sort | awk -F: '{print $1 ": " $2}'
+for user in $(cut -d: -f1 /etc/passwd); do echo -n "$user: "; eval echo ~$user; done | sorth
+
